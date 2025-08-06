@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignments</title>
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements</h1>
+        <nav>
+            <a href="#content">Content</a>
+            <a href="#Media">Media</a>
+            <a href="#Contact"></a>
+        </nav>
+    </header>
+
+    <!--Semantic content section-->
+    <main id="content">
+        <section>
+            <h2>Latest Articles</h2>
+            <article>
+                <h3>HTML5 Elements</h3>
+                <p>Learn how semantic tags improve accessibility and structure.</p>
+            </article>
+        </section>
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Use semantic</li>
+                <li>Validate forms</li>
+                <li>Use media elements</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!--media section-->
+    <section id="media">
+        <h3>Media Examples</h3>
+        <h4>Images</h4>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Tech background" width="300" height="300">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature view" width="300" height="300">
+        </figure>
+
+        <h4>Audio</h4>
+        <audio controls width="300">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h4>Videos</h4>
+        <video controls loop muted width="400" poster="thumbnail.jpg">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+
+        </video>
+        <h3>Tables</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Evans</th>
+                    <th>Male</th>
+                    <th>21</th>
+                    <th>Kenya</th>
+                </tr>
+            </tbody>
+        </table>
+        
+    </section>
+
+    <!--contact form section-->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://example.com/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br></br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <br></br>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" required>
+            <br></br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="country">Country:</label>
+            <br></br>
+            <select id="country" name="country">
+                <option value="kenya">Kenya</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br></br>
+            <label for="submit">Submit</label>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Evans. All rights are reserverd</p>
+    </footer>
+
+</body>
+</html>
